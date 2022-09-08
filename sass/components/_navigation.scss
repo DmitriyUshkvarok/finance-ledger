@@ -1,0 +1,32 @@
+.nav-list {
+  display: flex;
+  gap: $mobileNavGap;
+}
+
+.nav-list__link {
+  font-size: 16px;
+  line-height: 1.62;
+  color: $colorMainLight;
+  transition: color $transitionBasic;
+
+  &:hover,
+  &:focus {
+    color: $basicColor;
+  }
+}
+
+@media (min-width: 320px) {
+  .nav-list {
+    @include flexCentral();
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-list {
+    margin-right: 40px;
+  }
+
+  .nav-list__link {
+    font-size: 18px;
+  }
+}

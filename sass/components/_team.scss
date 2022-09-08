@@ -1,0 +1,61 @@
+.team {
+  padding: 50px 20px;
+}
+
+.team-list__item {
+  @include flexCentral();
+  flex-direction: column;
+}
+
+.team-list__item:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.team__icon {
+  fill: $colorMainLight;
+  transition: $transitionBasic;
+}
+
+.team__link:hover .team__icon,
+.team__link:focus .team__icon {
+  fill: $basicColor;
+}
+
+.team-list__name {
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 1.26;
+  text-align: center;
+  color: $globalColor;
+  margin-bottom: 11px;
+}
+
+.team-list__profession {
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: $globalColor;
+}
+
+@media (min-width: 768px) {
+  .team-list {
+    display: flex;
+    gap: 20px;
+  }
+
+  .team-list__name {
+    font-size: 25px;
+  }
+
+  .team-list__profession {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .team {
+    max-width: 1360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

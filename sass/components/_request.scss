@@ -1,0 +1,87 @@
+.request {
+  background-color: $requestBgColor;
+}
+
+.request-feedback {
+  padding: 30px;
+}
+
+.request-photo {
+  @include flexCentral();
+  margin-bottom: 26px;
+}
+
+.request__title {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+  color: $globalColor;
+  margin-bottom: 34px;
+}
+
+.request__feedback-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form-group:not(:last-of-type) {
+  margin-bottom: 36px;
+}
+
+.user-name,
+.user-email {
+  width: 260px;
+  height: 40px;
+  border: none;
+  padding: 8px;
+}
+
+.user-name::placeholder,
+.user-email::placeholder {
+  font-size: 16px;
+  line-height: 1.43;
+  color: $placeholderColor;
+}
+
+.user-name:focus,
+.user-email:focus {
+  outline: 1px solid $basicColor;
+}
+
+@media (min-width: 768px) {
+  .request {
+    display: flex;
+  }
+
+  .request-photo {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .request-feedback {
+    width: 50%;
+  }
+
+  .user-name,
+  .user-email {
+    width: 324px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .request {
+    max-width: 1360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .request-feedback {
+  padding-top: 78px;
+  padding-bottom: 82px;
+}
+
+.user-name,
+  .user-email {
+    width: 620px;
+  }
+}

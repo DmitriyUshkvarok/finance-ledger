@@ -1,0 +1,40 @@
+.button-sroll-up {
+  position: relative;
+}
+
+.btn-scroll {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: $basicColor;
+  font-size: 0;
+  opacity: 0.3;
+  z-index: 200;
+  display: none;
+  transition: $transitionBasic;
+}
+
+.btn-scroll.shown {
+  display: block;
+}
+
+.btn-scroll::before {
+  position: absolute;
+  content: "";
+  background-image: url("../images/pngwing.com.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-scroll:hover {
+  background-color: $colorHover;
+}

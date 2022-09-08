@@ -1,0 +1,94 @@
+.promo-box {
+  background-color: dodgerblue;
+  background-image: url("../images/promo-desktop-x1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 148px 40px 95px 40px;
+}
+
+.promo__title {
+  font-weight: 300;
+  font-size: 52px;
+  line-height: 1.27;
+  color: $promoColor;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.promo__text {
+  font-size: 22px;
+  line-height: 1.68;
+  text-align: center;
+  color: $promoColor;
+  margin-bottom: 27px;
+}
+
+@media (min-width: 320px) {
+  .promo-box {
+    background-image: url("../images/mobile-promo-x1.jpg");
+    height: 533px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .promo-box {
+    background-image: url("../images/mobile-promo-x2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .promo-box {
+    background-image: url("../images/promo-tablet-x1.jpg");
+    height: 1024px;
+    padding-top: 407px;
+    padding-bottom: 412px;
+  }
+
+  .promo__title {
+    font-size: 55px;
+    margin-bottom: 25px;
+  }
+
+  .promo__text {
+    margin-bottom: 39px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .promo-box {
+    background-image: url("../images/promo-tablet-x2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .promo-box {
+    background-image: url("../images/promo-desktop-x1.jpg");
+    max-width: 1360px;
+    margin: 0 auto;
+    height: 768px;
+    padding-top: 279px;
+    padding-bottom: 284px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .promo-box {
+      background-image: url("../images/promo-desktop-x2.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}

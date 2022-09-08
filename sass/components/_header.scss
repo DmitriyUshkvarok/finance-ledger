@@ -1,0 +1,30 @@
+.page-header {
+  position: relative;
+  max-width: 1360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-top {
+  position: absolute;
+  top: 27px;
+  left: 0;
+}
+
+@media (min-width: 320px) {
+  .header-top {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top: 17px;
+  }
+}

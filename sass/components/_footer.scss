@@ -1,0 +1,36 @@
+.footer {
+  padding: 20px 30px;
+  background-color: $globalColor;
+}
+
+.footer-social {
+  @include flexCentral();
+  gap: 25px;
+  margin-bottom: 10px;
+}
+
+.footer__icon {
+  fill: $colorMainLight;
+  transition: $transitionBasic;
+}
+
+.footer-social__link:hover .footer__icon,
+.footer-social__link:focus .footer__icon {
+  fill: $basicColor;
+}
+
+.footer-copyright {
+  @include flexCentral();
+}
+
+.footer-copyright__text {
+  font-size: 16px;
+  line-height: 1.62;
+  color: $colorMainLight;
+}
+
+@media (min-width: 768px) {
+  .footer-copyright__text {
+    font-size: 18px;
+  }
+}
