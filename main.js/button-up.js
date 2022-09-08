@@ -8,5 +8,5 @@ window.onscroll = function () {
 };
 
 buttonUp.onclick = function () {
-  window.scrollTo(10, 0);
+  window.scrollTo(0, 0);
 };
