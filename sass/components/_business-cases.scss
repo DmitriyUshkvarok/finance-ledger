@@ -37,13 +37,19 @@
   margin-left: auto;
 }
 
-.business-grouo-photo {
+.business-group-photo {
   @include flexCentral();
   flex-direction: column;
   row-gap: 7px;
 }
 
 @media (min-width: 768px) {
+  .business-cases {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .page-title {
     font-size: 20px;
   }
@@ -57,14 +63,14 @@
     max-width: 645px;
   }
 
-  .business-grouo-photo {
+  .business-group-photo {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 8px;
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1360px) {
   .business-cases {
     max-width: 1360px;
     margin-left: auto;

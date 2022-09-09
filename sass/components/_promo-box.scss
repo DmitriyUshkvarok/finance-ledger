@@ -1,4 +1,5 @@
 .promo-box {
+  position: relative;
   background-color: dodgerblue;
   background-image: url("../images/promo-desktop-x1.jpg");
   background-repeat: no-repeat;
@@ -29,6 +30,18 @@
     background-image: url("../images/mobile-promo-x1.jpg");
     height: 533px;
   }
+
+  .promo__title {
+    max-width: 241px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .promo__text {
+    max-width: 246px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -45,17 +58,22 @@
 @media (min-width: 768px) {
   .promo-box {
     background-image: url("../images/promo-tablet-x1.jpg");
-    height: 1024px;
+    min-height: 1024px;
     padding-top: 407px;
     padding-bottom: 412px;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .promo__title {
     font-size: 55px;
     margin-bottom: 25px;
+    max-width: 493px;
   }
 
   .promo__text {
+    max-width: 549px;
     margin-bottom: 39px;
   }
 }
@@ -71,12 +89,12 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1360px) {
   .promo-box {
     background-image: url("../images/promo-desktop-x1.jpg");
     max-width: 1360px;
     margin: 0 auto;
-    height: 768px;
+    min-height: 768px;
     padding-top: 279px;
     padding-bottom: 284px;
   }

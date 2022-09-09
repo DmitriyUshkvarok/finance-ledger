@@ -35,19 +35,3 @@ body {
   line-height: 1.55;
 }
 
-.container {
-  max-width: 1260px;
-  margin: 0 auto;
-
-  @media (min-width: 320px) {
-    width: 320px;
-  }
-
-  @media (min-width: 768px) {
-    width: 768px;
-  }
-
-  @media (min-width: 1000px) {
-    width: 1000px;
-  }
-}

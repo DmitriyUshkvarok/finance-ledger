@@ -3,12 +3,11 @@
 }
 
 .request-feedback {
-  padding: 30px;
+  padding: 30px 30px 25px 30px;
 }
 
 .request-photo {
   @include flexCentral();
-  margin-bottom: 26px;
 }
 
 .request__title {
@@ -22,6 +21,7 @@
 .request__feedback-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .feedback-form-group:not(:last-of-type) {
@@ -48,6 +48,19 @@
   outline: 1px solid $basicColor;
 }
 
+@media (min-width: 320px) {
+  .request {
+    max-width: 767px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .request__title {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 @media (min-width: 768px) {
   .request {
     display: flex;
@@ -55,11 +68,18 @@
 
   .request-photo {
     width: 50%;
-    margin-bottom: 0;
+  }
+
+  .request__title {
+    justify-content: start;
   }
 
   .request-feedback {
     width: 50%;
+  }
+
+  .request__feedback-form {
+    max-width: 324px;
   }
 
   .user-name,
@@ -68,7 +88,7 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1360px) {
   .request {
     max-width: 1360px;
     margin-left: auto;
@@ -76,11 +96,15 @@
   }
 
   .request-feedback {
-  padding-top: 78px;
-  padding-bottom: 82px;
-}
+    padding-top: 78px;
+    padding-bottom: 82px;
+  }
 
-.user-name,
+  .request__feedback-form {
+    max-width: 620px;
+  }
+
+  .user-name,
   .user-email {
     width: 620px;
   }

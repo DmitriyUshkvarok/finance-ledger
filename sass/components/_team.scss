@@ -1,14 +1,10 @@
 .team {
-  padding: 50px 20px;
+  padding: 50px 20px 30px 20px;
 }
 
 .team-list__item {
   @include flexCentral();
   flex-direction: column;
-}
-
-.team-list__item:not(:last-of-type) {
-  margin-bottom: 10px;
 }
 
 .team__icon {
@@ -38,6 +34,12 @@
 }
 
 @media (min-width: 768px) {
+.team {
+ max-width: 768px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
   .team-list {
     display: flex;
     gap: 20px;
@@ -52,7 +54,7 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1360px) {
   .team {
     max-width: 1360px;
     margin-left: auto;
