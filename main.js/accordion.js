@@ -5,3 +5,4 @@ acc.onclick = function () {
   acc.classList.toggle("active");
   panel.classList.toggle("active");
 };
+

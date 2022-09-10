@@ -4,8 +4,19 @@
   cursor: pointer;
 }
 
+.owerlay__link {
+  display: block;
+}
+
+
+.owerlay__link:hover .owerlay-social,
+.owerlay__link:focus .owerlay-social {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 .owerlay-social {
-  transform: scale(0);
+  opacity: 0;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -13,13 +24,10 @@
   bottom: 0;
   left: 0;
   @include flexCentral();
-  background-color: rgba(3, 3, 3, 0.2);
   gap: 25px;
+  transform: translateY(100%);
 }
 
-.owerlay-wrapper:hover .owerlay-social {
-  transform: scale(1) rotate(360deg);
-}
 
 .owerlay-box {
   padding: 15px;
