@@ -1,18 +1,39 @@
 .panel {
+  position: absolute;
   margin: 0;
-  display: none;
+  transform: translateY(0);
+  opacity: 0;
+  bottom: 0;
+  left: 0;
   max-width: 1360px;
   margin-left: auto;
   margin-right: auto;
-  padding: 40px;
+  padding: 30px;
   background-color: $basicColor;
+  transition: $transitionBasic;
+  pointer-events: none;
+  z-index: -5;
 }
 
 .panel.active {
-  display: block;
+  transform: translateY(100%);
+  opacity: 1;
+  z-index: -10;
 }
 
 .panel-info {
   font-size: 20px;
   color: $colorMainLight;
+}
+
+@media (min-width: 768px) {
+  .panel {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .panel {
+    max-width: 1360px;
+  }
 }
