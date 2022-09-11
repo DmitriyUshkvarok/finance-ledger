@@ -11,7 +11,7 @@
   border-radius: $btnBorderRadius;
   margin-left: auto;
   margin-right: auto;
-  transition: $transitionBasic;
+  transition: background-color $transitionBasic, outline $transitionBasic;
   cursor: pointer;
 
   &:hover,
@@ -39,7 +39,7 @@
   border: none;
   border-radius: $btnBorderRadius;
   color: $colorMainLight;
-  transition: $transitionBasic;
+  transition: background-color $transitionBasic;
   cursor: pointer;
 
   &:hover,
@@ -64,8 +64,10 @@
   border: none;
   border-radius: $btnBorderRadius;
   color: $colorMainLight;
-  transition: $transitionBasic;
+  transition: background-color $transitionBasic;
   cursor: pointer;
+  margin-left: 2px;
+  margin-bottom: 2px;
 
   &:hover,
   &:focus {
@@ -87,7 +89,7 @@
   border-radius: $btnBorderRadius;
   color: $colorMainLight;
   @include flexCentral();
-  transition: $transitionBasic;
+  transition: background-color $transitionBasic;
   cursor: pointer;
 
   &:hover,

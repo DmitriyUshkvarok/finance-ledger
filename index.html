@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.min.css" />
@@ -265,20 +266,64 @@
     </section>
     <!-- blog section -->
     <section class="blog" id="blog">
+
+
         <div class="blog-post">
-            <time class="blog__time" datetime="2020-04-16 19:00">April
-                16 2020</time>
-            <h3 class="blog-title">Blog Post One</h3>
-            <p class="blog-description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit. Voluptate,
-                ipsum dignissimos quae laudantium asperiores nam aliquid
-                impedit
-                harum illum dolore explicabo ab dolores itaque rerum
-                temporibus
-                doloribus iste maiores deleniti?
-            </p>
-            <button class="btn btn-blog">Read Our Blog</button>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- 1 -->
+                    <div class="swiper-slide">
+                        <time class="blog__time" datetime="2020-04-16 19:00">April
+                            16 2020</time>
+                        <h3 class="blog-title">Blog Post One</h3>
+                        <p class="blog-description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Voluptate,
+                            ipsum dignissimos quae laudantium asperiores nam aliquid
+                            impedit
+                            harum illum dolore explicabo ab dolores itaque rerum
+                            temporibus
+                            doloribus iste maiores deleniti?
+                        </p>
+                        <button class="btn btn-blog">Read Our Blog</button>
+                    </div>
+                    <!-- 2 -->
+                    <div class="swiper-slide">
+                        <time class="blog__time" datetime="2020-04-16 19:00">May
+                            30 2020</time>
+                        <h3 class="blog-title">Blog Post Two</h3>
+                        <p class="blog-description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Voluptate,
+                            ipsum dignissimos quae laudantium asperiores nam aliquid
+                            impedit
+                            harum illum dolore explicabo ab dolores itaque rerum
+                            temporibus
+                            doloribus iste maiores deleniti?
+                        </p>
+                        <button class="btn btn-blog">Read Our Blog</button>
+                    </div>
+                    <!-- 3 -->
+                    <div class="swiper-slide">
+                        <time class="blog__time" datetime="2020-04-16 19:00">June
+                            05 2021</time>
+                        <h3 class="blog-title">Blog Post Three</h3>
+                        <p class="blog-description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Voluptate,
+                            ipsum dignissimos quae laudantium asperiores nam aliquid
+                            impedit
+                            harum illum dolore explicabo ab dolores itaque rerum
+                            temporibus
+                            doloribus iste maiores deleniti?
+                        </p>
+                        <button class="btn btn-blog">Read Our Blog</button>
+                    </div>
+
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </div>
         <div class="blog-decor">
             <picture>
@@ -301,47 +346,46 @@
         </p>
         <ul class="team-list">
             <li class="team-list__item">
-                <a class="owerlay__link" href="">
-                <div class="owerlay-wrapper">
-
+                <div class="team-list__box">
+                    <a class="owerlay__link" href=""></a>
                     <img srcset="./images/team-1-x2.jpg 2x" src="./images/team-1-x1.jpg"
                         alt="guy in a tuxedo looks with a smile" width="420" height="280" />
+                    <ul class="owerlay-social">
+                        <li class="list__item"><a class="team__link" href="#">
+                                <svg class="team__icon" width="35" height="35">
+                                    <use xlink:href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a></li>
+                        <li class="list__item"><a class="team__link" href="">
+                                <svg class="team__icon" width="35" height="35">
+                                    <use xlink:href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a></li>
+                        <li class="list__item"> <a class="team__link" href="">
+                                <svg class="team__icon" width="40" height="35">
+                                    <use xlink:href="./images/sprite.svg#icon-youtube"></use>
+                                </svg>
+                            </a></li>
+                        <li class="list__item"><a class="team__link" href="">
+                                <svg class="team__icon" width="31" height="35">
+                                    <use xlink:href="./images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                </a>
-                <ul class="owerlay-social">
-                    <li class="list__item"><a class="team__link" href="#">
-                            <svg class="team__icon" width="35" height="35">
-                                <use xlink:href="./images/sprite.svg#icon-facebook"></use>
-                            </svg>
-                        </a></li>
-                    <li class="list__item"><a class="team__link" href="">
-                            <svg class="team__icon" width="35" height="35">
-                                <use xlink:href="./images/sprite.svg#icon-twitter"></use>
-                            </svg>
-                        </a></li>
-                    <li class="list__item"> <a class="team__link" href="">
-                            <svg class="team__icon" width="40" height="35">
-                                <use xlink:href="./images/sprite.svg#icon-youtube"></use>
-                            </svg>
-                        </a></li>
-                    <li class="list__item"><a class="team__link" href="">
-                            <svg class="team__icon" width="31" height="35">
-                                <use xlink:href="./images/sprite.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
                 <div class="owerlay-box">
                     <h3 class="team-list__name">John Doe</h3>
                     <p class="team-list__profession">President</p>
                 </div>
             </li>
             <li class="team-list__item">
-                <div class="owerlay-wrapper">
+                <div class="team-list__box">
+                    <a class="owerlay__link" href=""></a>
                     <img srcset="./images/team-2-x2.jpg 2x" src="./images/team-2-x1.jpg" alt="
                                 fair-haired girl in the office sits on a
                                 chair
-                                with a smile" width="428" height="286" />
+                                with a smile" width="420" height="280" />
                     <ul class="owerlay-social">
                         <li class="list__item"><a class="team__link" href="#">
                                 <svg class="team__icon" width="35" height="35">
@@ -374,7 +418,8 @@
             </li>
             <li class="team-list__item">
 
-                <div class="owerlay-wrapper">
+                <div class="team-list__box">
+                    <a class="owerlay__link" href=""></a>
                     <img srcset="./images/team-3-x2.jpg 2x" src="./images/team-3-x1.jpg" alt="the guy
                                 with a smile drinks coffee in the
                                 office behind a laptop" width="420" height="280" />
@@ -432,7 +477,7 @@
                     <label for="email"><input id="email" class="user-email" type="email"
                             placeholder="Enter email*" /></label>
                 </div>
-                <button class="btn btn--request-form" type="button">Send</button>
+                <button class="btn btn--request-form" type="submit">Send</button>
             </form>
         </div>
     </section>
@@ -466,6 +511,8 @@
             <a href="/" class="btn-scroll"></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./main.js/swiper.js"></script>
     <script src="./main.js/button-up.js"></script>
     <script src="./main.js/accordion.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>

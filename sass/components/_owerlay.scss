@@ -1,30 +1,26 @@
-.owerlay-wrapper {
-  position: relative;
-  overflow: hidden;
-}
-
 .owerlay__link {
-  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .owerlay-social {
-  // opacity: 0;
+  opacity: 0;
   position: absolute;
-  z-index: 10;
-  width: 100%;
-  height: 100%;
-  transition: $transitionBasic;
+  transition: background-color $transitionBasic, opacity $transitionBasic;
+  top: 0;
+  right: 0;
   bottom: 0;
   left: 0;
+  background-color: #0000007d;
   @include flexCentral();
-  flex-direction: row;
   gap: 25px;
-  // transform: translateY(100%);
 }
 
-.overlay:hover .owerlay-social,
-.overlay:focus .owerlay-social {
-  transform: translateY(0);
+.team-list__box:hover .owerlay-social,
+.team-list__box:focus .owerlay-social {
   opacity: 1;
 }
 

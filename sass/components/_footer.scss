@@ -12,7 +12,7 @@
 
 .footer__icon {
   fill: $colorMainLight;
-  transition: $transitionBasic;
+  transition: fill $transitionBasic;
 }
 
 .footer-social__link:hover .footer__icon,
