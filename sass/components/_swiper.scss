@@ -1,16 +1,25 @@
+:root {
+  --swiper-navigation-size: 20px;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   position: absolute;
-  color: antiquewhite;
-  font-size: 30px;
+  color: $colorMainLight;
+  transition: transform $transitionBasic;
+
+  &.swiper-button-next:hover,
+  &.swiper-button-prev:hover {
+    transform: scale(1.2);
+  }
 }
 
 .swiper-button-next {
   right: 10px;
-  top: 10%;
+  top: 5%;
 }
 
 .swiper-button-prev {
   left: 70%;
-  top: 10%;
+  top: 5%;
 }

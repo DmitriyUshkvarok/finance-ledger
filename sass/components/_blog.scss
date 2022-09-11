@@ -1,7 +1,13 @@
-.blog-post {
+  .blog {
+    display: flex;
+  flex-direction: column;
+  }
+ 
+ .blog-post {
   padding: 30px;
   background-color: $blog-color;
   position: relative;
+  order: 1;
 }
 
 .blog__time {
@@ -32,6 +38,7 @@
 @media (min-width: 768px) {
   .blog {
     display: flex;
+    flex-direction: row;
     max-width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -39,6 +46,7 @@
 
   .blog-post {
     width: 50%;
+    order: 0;
   }
 
   .blog-decor {
