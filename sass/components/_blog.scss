@@ -1,12 +1,14 @@
-  .blog {
-    display: flex;
+.blog {
+  display: flex;
   flex-direction: column;
-  }
- 
- .blog-post {
+  position: relative;
+  z-index: 15;
+}
+
+.blog-post {
   padding: 30px;
   background-color: $blog-color;
-  position: relative;
+
   order: 1;
 }
 

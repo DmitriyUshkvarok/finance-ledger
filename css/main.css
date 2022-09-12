@@ -604,6 +604,34 @@ body {
   }
 }
 
+.button-close-blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 30px;
+  background-color: transparent;
+  outline: 1px solid #ffffff;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  -webkit-transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button-close-blog:hover, .button-close-blog:focus {
+  background-color: rgb(0, 191, 255);
+  outline: 2px solid #ffffff;
+}
+
 .btn--request-form {
   margin-top: 53px;
   background-color: #28a745;
@@ -799,7 +827,7 @@ body {
 }
 .servicess {
   position: relative;
-  z-index: 5;
+  z-index: 15;
 }
 
 .servicess__bespoke-solutions {
@@ -902,25 +930,56 @@ body {
   z-index: -10;
 }
 
-.panel.panel--show {
+.panel-info,
+.panel-info-blog {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.panel--show {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   opacity: 1;
 }
 
-.panel-info {
-  font-size: 20px;
-  color: #ffffff;
-  margin-bottom: 15px;
+.panel-blog {
+  position: absolute;
+  margin: 0;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 1360px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  -webkit-transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #0284d0;
+  z-index: -10;
+}
+
+.panel-blog--show {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 1;
 }
 
 @media (min-width: 768px) {
   .panel {
     max-width: 768px;
   }
+  .panel-blog {
+    max-width: 768px;
+  }
 }
 @media (min-width: 1360px) {
   .panel {
+    max-width: 1360px;
+  }
+  .panel-blog {
     max-width: 1360px;
   }
 }
@@ -1021,12 +1080,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+  z-index: 15;
 }
 
 .blog-post {
   padding: 30px;
   background-color: #0284d0;
-  position: relative;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;

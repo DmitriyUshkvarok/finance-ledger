@@ -1,12 +1,12 @@
+// servicess
 var panel = document.querySelector(".panel");
-var openPopupButton = document.querySelector(".btn--servicess");
-var closePopupButton = panel.querySelector(".button-close");
-
-openPopupButton.addEventListener("click", function (evt) {
+var openPanelButton = document.querySelector(".btn--servicess");
+var closePanelButton = panel.querySelector(".button-close");
+openPanelButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   panel.classList.add("panel--show");
 });
 
-closePopupButton.addEventListener("click", function () {
+closePanelButton.addEventListener("click", function () {
   panel.classList.remove("panel--show");
 });
