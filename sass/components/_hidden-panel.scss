@@ -40,11 +40,13 @@
   transition: $transitionBasic;
   background-color: $blog-color;
   z-index: -10;
+  pointer-events: none;
 }
 
 .panel-blog--show {
   transform: translateY(100%);
   opacity: 1;
+  pointer-events: fill;
 }
 
 @media (min-width: 768px) {

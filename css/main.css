@@ -959,12 +959,14 @@ body {
   transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #0284d0;
   z-index: -10;
+  pointer-events: none;
 }
 
 .panel-blog--show {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   opacity: 1;
+  pointer-events: fill;
 }
 
 @media (min-width: 768px) {
