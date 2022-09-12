@@ -55,6 +55,27 @@
   }
 }
 
+.button-close {
+  @include flexCentral();
+  width: 100px;
+  height: 30px;
+  background-color: transparent;
+  outline: 1px solid $colorMainLight;
+  border: none;
+  border-radius: $btnBorderRadius;
+  color: $colorMainLight;
+  transition: background-color $transitionBasic;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:hover,
+  &:focus {
+    background-color: $colorHover;
+    outline: 2px solid $colorMainLight;
+  }
+}
+
 .btn-blog {
   @include flexCentral();
   width: 184px;
