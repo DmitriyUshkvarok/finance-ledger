@@ -45,7 +45,6 @@
   &:hover,
   &:focus {
     background-color: $colorHover;
-    outline: 2px solid $colorMainLight;
   }
 
   @media (min-width: 768px) {

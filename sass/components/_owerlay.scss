@@ -19,8 +19,8 @@
   gap: 25px;
 }
 
-.team-list__box:hover .owerlay-social,
-.team-list__box:focus .owerlay-social {
+.owerlay-social:hover,
+.owerlay-social:focus {
   opacity: 1;
 }
 
