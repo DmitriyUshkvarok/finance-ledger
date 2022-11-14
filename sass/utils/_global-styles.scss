@@ -19,6 +19,14 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  opacity: 0;
+  transition: linear 1000ms;
+  transform: translateX(-100%);
+}
+
+img.appear {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 html {
@@ -34,4 +42,3 @@ body {
   font-size: $globalFontSize;
   line-height: 1.55;
 }
-

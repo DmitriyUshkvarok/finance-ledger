@@ -278,6 +278,17 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  opacity: 0;
+  -webkit-transition: linear 1000ms;
+  transition: linear 1000ms;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+img.appear {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 html {
